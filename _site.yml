@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "CV"
       href: about.html
+    - text: "Plotly"
+      href: plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:<deewang62108@gmail.com>
     - icon: fa-github fa-lg

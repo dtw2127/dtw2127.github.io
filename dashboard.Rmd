@@ -18,11 +18,17 @@ data("nyc_airbnb")
 
 #create subset
 
-instacart %>% 
-  group_by(product_name) %>% 
-  summarize(n_obs = n()) %>% 
-  filter(n_obs > 1000) %>%
-  plot_ly(x = ~product_name, y = ~n_obs, type = "bar")
+instacart = instacart %>% 
+  select(order_dow, order_hour_of_day, aisle, product_name) %>%
+  filter(aisle %in% c("fresh fruits")) %>% 
+  mutate(order_dow = recode(order_dow, `0` = "Sunday", 
+                            `1` = "Monday", 
+                            `2` = "Tuesday", 
+                            `3` = "Wednesday", 
+                            `4` = "Thursday", 
+                            `5` = "Friday", 
+                            `6` = "Saturday")) %>%
+  mutate(order_dow = factor(order_dow, levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")))
 
 ```
 
@@ -35,7 +41,7 @@ Column {data-width=650}
 instacart %>% 
   group_by(product_name) %>% 
   summarize(n_obs = n()) %>% 
-  filter(n_obs > 1000) %>%
+  slice_max(n_obs, n=20) %>%
   plot_ly(x = ~product_name, y = ~n_obs, type = "bar")
 ```
 

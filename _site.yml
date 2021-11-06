@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "CV"
       href: about.html
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/dee-wang-385b18113/
     - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg

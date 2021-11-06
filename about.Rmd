@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-# Education
+## Education
 
 **Mailman School of Public Health, Columbia University, MPH**, New York, USA (expected May 2022)
 
@@ -15,11 +15,11 @@ output:
 **University of Oxford, Visiting Student**, Oxford, United Kingdom (Oct 2017-Jun 2018)
 
 
-# Publications
+## Publications
 
 Wang, D. (2021). "Evaluation of a contactless neonatal physiological monitor in Nairobi, Kenya" *Archives of Childhood Disease* Published Online First: 05 November 2021. doi: 10.1136/archdischild-2021-322344
 
-# Public Health Experience 
+## Public Health Experience 
 **Advancing Research on Community Health Systems (ARCHeS) Program at the Mailman School of Public Health, Research Assistant,** New York, United States (Mar 2021 – present) <br />
 •	Conduct literature review on effective coverage 
 
@@ -40,7 +40,7 @@ Wang, D. (2021). "Evaluation of a contactless neonatal physiological monitor in 
 •	Organized and prepared blood samples for testing of zoonotic diseases <br />
 •	Conducted linear regression analysis on tick trends in British Columbia
 
-# Teaching Experience 
+## Teaching Experience 
 **UBC Math 100/101, Teaching Assistant,** Vancouver, Canada (Sept 2014-Mar 2016, Sept-Dec 2018) <br />
 •	Taught new concepts at the beginning of workshops and facilitated problem solving in groups <br />
 •	Held weekly office hours and graded problem sets and exams <br />

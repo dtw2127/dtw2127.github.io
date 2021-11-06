@@ -28,44 +28,47 @@ instacart = instacart %>%
                             `4` = "Thursday", 
                             `5` = "Friday", 
                             `6` = "Saturday")) %>%
-  mutate(order_dow = factor(order_dow, levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")))
+  mutate(order_dow = factor(order_dow, levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))) 
 
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Bar chart of top 20 products in the "fresh fruits" aisle
 
 ```{r}
 instacart %>% 
   group_by(product_name) %>% 
   summarize(n_obs = n()) %>% 
   slice_max(n_obs, n=20) %>%
-  plot_ly(x = ~product_name, y = ~n_obs, type = "bar")
+  plot_ly(x = ~product_name, y = ~n_obs, type = "bar") %>% 
+  layout(xaxis = list(title = "Product name"), yaxis = list(title = "Number products ordered"))
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Box plots showing order hour of day distribution for each day of the week for fresh fruits aisle
 
 ```{r}
 instacart %>% 
   group_by(product_name, order_dow) %>% 
   plot_ly(
     y = ~order_hour_of_day, x = ~order_dow, 
-    type = "box", colors = "viridis")
+    type = "box", colors = "viridis") %>% 
+  layout(xaxis = list(title = " Order day of the week"), yaxis = list(title = "Order hour of the day"))
 
 ```
 
-### Chart C
+### Line chart showing number of fresh fruits aisle products ordered per day of the week
 
 ```{r}
 instacart %>%
   group_by(order_dow) %>% 
   summarize(number_products_ordered = n()) %>%
-  plot_ly(x = ~order_dow, y = ~number_products_ordered, type = "scatter", mode = "lines")
+  plot_ly(x = ~order_dow, y = ~number_products_ordered, type = "scatter", mode = "lines") %>% 
+  layout(xaxis = list(title = "Order day of the week"), yaxis = list(title = "Number products ordered"))
 
 ```
 

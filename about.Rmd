@@ -1,0 +1,48 @@
+---
+title: "CV"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Education
+
+**Mailman School of Public Health, Columbia University, MPH**, New York, USA (expected May 2022)
+
+**University of British Columbia (UBC), Bachelor of Science with Distinction in Biology with a minor in Statistics**, Vancouver, Canada (May 2019)
+
+**University of Oxford, Visiting Student**, Oxford, United Kingdom (Oct 2017-Jun 2018)
+
+
+# Publications
+
+Wang, D. (2021). "Evaluation of a contactless neonatal physiological monitor in Nairobi, Kenya" *Archives of Childhood Disease* Published Online First: 05 November 2021. doi: 10.1136/archdischild-2021-322344
+
+# Public Health Experience 
+**Advancing Research on Community Health Systems (ARCHeS) Program at the Mailman School of Public Health, Research Assistant,** New York, United States (Mar 2021 – present) <br />
+•	Conduct literature review on effective coverage 
+
+**Evaluation of Technologies for Neonates in Africa Program at Centre for International Child Health, Data Analyst,** Vancouver, Canada (Jan 2020 – Nov 2020) <br />
+•	Conducted data analysis in R to evaluate accuracy of new neonatal physiological monitoring technology <br />
+•	Co-authored manuscript presenting findings from the accuracy evaluation study <br />
+•	Coordinated weekly meetings with study partners
+
+**UBC Global Health Research Program, Research Assistant, Johannesburg,** South Africa (May 2019-Sept 2019) <br />
+•	Conducted literature search on silicosis and tuberculosis in South African gold mining populations <br />
+•	Consulted with members of the health department, occupational hygienists, and data specialists to determine the best way to estimate silica dust exposure <br />
+•	Analyzed large datasets using R 
+
+**University of Oxford Independent Literature Review Project, Student Researcher,** Oxford, United Kingdom (Mar-Jun 2018) <br />
+•	Conducted literature search and consolidated information from 75 sources in 13000 word academic essay analyzing barriers to improvement of maternal health in Paraguay
+
+**Zoonotic Diseases Lab at the BC Centre for Disease Control, Co-op student,** Vancouver, Canada (May-Aug 2017) <br />
+•	Organized and prepared blood samples for testing of zoonotic diseases <br />
+•	Conducted linear regression analysis on tick trends in British Columbia
+
+# Teaching Experience 
+**UBC Math 100/101, Teaching Assistant,** Vancouver, Canada (Sept 2014-Mar 2016, Sept-Dec 2018) <br />
+•	Taught new concepts at the beginning of workshops and facilitated problem solving in groups <br />
+•	Held weekly office hours and graded problem sets and exams <br />
+•	Developed curriculum by revising workshops and problem sets 
+

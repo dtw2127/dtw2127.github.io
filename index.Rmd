@@ -1,0 +1,12 @@
+---
+title: "Dee's website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+Hello human! Thank you for visiting my website. I am currently a second year MPH student at the Mailman School of Public Health at Columbia. If you would like to learn more about my academic and professional experience, please feel free to click on the "CV" icon on the uper right corner of this page.
+
+![](images/mountain.jpg)
+

@@ -1,0 +1,14 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "CV"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<deewang62108@gmail.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/dtw2127/
+output:
+  html_document:
+    theme: paper

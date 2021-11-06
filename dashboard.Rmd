@@ -1,0 +1,65 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("nyc_airbnb")
+
+#create subset
+
+instacart %>% 
+  group_by(product_name) %>% 
+  summarize(n_obs = n()) %>% 
+  filter(n_obs > 1000) %>%
+  plot_ly(x = ~product_name, y = ~n_obs, type = "bar")
+
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+instacart %>% 
+  group_by(product_name) %>% 
+  summarize(n_obs = n()) %>% 
+  filter(n_obs > 1000) %>%
+  plot_ly(x = ~product_name, y = ~n_obs, type = "bar")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart %>% 
+  group_by(product_name, order_dow) %>% 
+  plot_ly(
+    y = ~order_hour_of_day, x = ~order_dow, 
+    type = "box", colors = "viridis")
+
+```
+
+### Chart C
+
+```{r}
+instacart %>%
+  group_by(order_dow) %>% 
+  summarize(number_products_ordered = n()) %>%
+  plot_ly(x = ~order_dow, y = ~number_products_ordered, type = "scatter", mode = "lines")
+
+```
+
